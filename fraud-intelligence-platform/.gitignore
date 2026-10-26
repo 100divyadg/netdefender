@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# The PaySim CSV is ~470 MB and is downloaded, never committed
+data/raw/*
+!data/raw/.gitkeep
+
+# Trained models are rebuilt by `python -m src.training.train`
+artifacts/*
+!artifacts/.gitkeep
